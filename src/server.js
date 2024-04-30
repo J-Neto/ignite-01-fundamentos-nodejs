@@ -1,30 +1,37 @@
 import http from 'node:http';
 import { json } from './middlewares/json.js';
+import { routes } from './routes.js';
+import { extractQueryParams } from './utils/extract-query-params.js';
 
-const users = []
+// Query Parameters: URL Stateful => Filtros, paginação, não-obrigatórios, não-sensíveis
+//    - http://localhost:3333/users?userId=1&name=Diego
+//  
+// Route Parameters: Identificação de recurso (Geralmente)
+//    - GET http://localhost:3333/users/1
+
+// Request Body: Envio para informações de formulário (HTTPs)
+//    - POST http://localhost:3333/users
 
 const server = http.createServer(async (req, res) => {
   const { method, url } = req
 
   await json(req,res)
 
-  if (method === 'GET' && url === '/users') {
-    return res
-      .end(JSON.stringify(users))
+  const route = routes.find(route => {
+    return route.method === method && route.path.test(url)
+  })
+
+  if(route) {
+
+    const routeParams = req.url.match(route.path)
+
+    const { query, ...params } = routeParams.groups
+
+    req.params = params
+    req.query = query ? extractQueryParams(query) : {}
+
+    return route.handler(req, res)
   }
-
-  if (method === 'POST' && url === '/users') {
-    const { name, email } = req.body
-
-    users.push({
-      id: 1,
-      name,
-      email
-    })
-
-    return res.writeHead(201).end()
-  }
-  
   return res.writeHead(404).end()
 })
 
