@@ -13,7 +13,9 @@
 
 💻 Description
 =======================
-<p align="left">Desenvolvendo uma API RESTful com Node.js com foco nos fundamentos da tecnologia, sem frameworks ou bibliotecas externas. Projeto desenvolvido no primeiro módulo da formação de Node.js do Ignite da Rocketseat</p>
+<p align="center">Desenvolvendo uma API RESTful com Node.js com foco nos fundamentos da tecnologia, sem frameworks ou bibliotecas externas. Projeto desenvolvido no primeiro módulo da formação de Node.js do Ignite da Rocketseat</p>
+
+<p>The main project is on "src" folder. The "streams" folder have some node streams fundamentals</p>
 
 <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
     <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
