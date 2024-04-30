@@ -1,7 +1,5 @@
 <h1>Ignite - 01 - Fundamentos do Node.js</h1>
 
-Desenvolvendo uma API RESTful com Node.js com foco nos fundamentos da tecnologia, sem frameworks ou bibliotecas externas.
-
 <p align="center">
  <a href="#description">Description</a> •
  <a href="#features">Features</a> • 
@@ -15,7 +13,7 @@ Desenvolvendo uma API RESTful com Node.js com foco nos fundamentos da tecnologia
 
 💻 Description
 =======================
-<p align="center">Desenvolvendo uma API RESTful com Node.js com foco nos fundamentos da tecnologia, sem frameworks ou bibliotecas externas. Projeto desenvolvido no primeiro módulo da formação de Node.js do Ignite da Rocketseat</p>
+<p align="left">Desenvolvendo uma API RESTful com Node.js com foco nos fundamentos da tecnologia, sem frameworks ou bibliotecas externas. Projeto desenvolvido no primeiro módulo da formação de Node.js do Ignite da Rocketseat</p>
 
 <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
     <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
@@ -48,17 +46,3 @@ Before starting, you must have installed the following tools on your machine: [G
 Made with ❤️ by José Neto 👋🏽 Get in touch!
 
 <a href="https://www.linkedin.com/in/jos%C3%A9-neto-299920152/"> <img src="https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> 
-
-1. Iniciar projeto nodejs: 
-    - npm init -y
-2. Para o Nodejs entender o padrão dos ESModules:
-    * no package.json, inclua:
-        - "type":"module"
-3. Criar script dev:
-    * no package.json, inclua:
-        - "dev": "node --watch src/server.js"
-    * Agora execute a aplicação com:
-        - npm run dev
-
-Para rodar o server em uma interface de linha de comando:
-    * http localhost:3333
