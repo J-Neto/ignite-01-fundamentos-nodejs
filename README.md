@@ -13,7 +13,7 @@
 
 💻 Description
 =======================
-<p align="center">Desenvolvendo uma API RESTful com Node.js com foco nos fundamentos da tecnologia, sem frameworks ou bibliotecas externas. Projeto desenvolvido no primeiro módulo da formação de Node.js do Ignite da Rocketseat</p>
+<p align="center">Developing a RESTful Node.js API focusing on technology fundamentals, without external frameworks or libraries. Project developed in the first module of Rocketseat's Ignite Node.js training.</p>
 
 <p>The main project is on "src" folder. The "streams" folder have some node streams fundamentals</p>
 
