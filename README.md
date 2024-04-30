@@ -38,7 +38,7 @@
 
 📑 Requirements
 =======================
-Before starting, you must have installed the following tools on your machine: [GIT](https://git-scm.com/downloads). [NODE.JS](https://nodejs.org/en/download/current). Also it's nice to have an editor to work with the code like [VSCode](https://code.visualstudio.com/).
+Before starting, you must have installed the following tools on your machine: [GIT](https://git-scm.com/downloads), [NODE.JS](https://nodejs.org/en/download/current). Also it's nice to have an editor to work with the code like [VSCode](https://code.visualstudio.com/).
 
 
 😎 Author
